@@ -1,8 +1,8 @@
-# Siri Installer
+# kaya Installer
 
-### SiriUserbot Otomatik Deployer
+### KayaaUserbot Otomatik Deployer
 
-[Siri UserBot Reposu](https://github.com/SiriUserBot/siriuserbot)
+[Kaya .xd UserBot Reposu](https://github.com/SiriUserBot/siriuserbot)
 
 ## Kurulum
 ```sh
@@ -18,7 +18,7 @@ python3 -m siri_installer
 
 ## Geliştiriciler
 
-[![Berce](https://github.com/must4f.png?size=100)](https://t.me/siriuserbot)
+[![kaYaĞ](https://github.com/must4f.png?size=100)](https://t.me/siriuserbot)
 
 ## Lisans
 Bu proje GPL-3.0 lisansı ile korunmaktadır.Tum Haklar Saklıdır
