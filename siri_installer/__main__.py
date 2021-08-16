@@ -4,10 +4,6 @@ from telethon import TelegramClient, functions
 from telethon.sessions import StringSession
 from rich.prompt import Prompt, Confirm
 from asyncio import get_event_loop
-from siri_installer import *
-from .astring import main
-from time import time
-from . import console
 from git import Repo
 import requests
 import heroku3
@@ -84,21 +80,6 @@ async def oturumacvebotlogolustur (stri, aid, ahash):
     except:
         KanalId = 'err'
         return KanalId
-
-if __name__ == "__main__":
-    logo(LANGUAGE)
-    loop = get_event_loop()
-    api = soru(LANG['HEROKU_KEY'])
-    bilgi(LANG['HEROKU_KEY_LOGIN'])
-    heroku = connect(api)
-    basarili(LANG['LOGGED'])
-
-    # Telegram #
-    onemli(LANG['GETTING_STRING_SESSION'])
-    stri, aid, ahash = main()
-    basarili(LANG['SUCCESS_STRING'])
-    SyperStringKey = "SiriUserBot"
-    baslangic = time()
 
 
     # Heroku #
