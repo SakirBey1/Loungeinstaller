@@ -2,7 +2,7 @@ from . import logo, console, bilgi, hata, soru
 from rich.prompt import Prompt
 from rich.panel import Panel
 from time import sleep
-from json import loads
+from json import loa
 
 def importlang ():
     console.clear()
