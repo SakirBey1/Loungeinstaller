@@ -9,7 +9,6 @@ from telethon.sessions import StringSession
 from telethon.utils import get_display_name
 from random import choice, randint
 from rich.prompt import Prompt
-from .language import LANG
 import subprocess
 import asyncio
 import requests
@@ -93,16 +92,6 @@ def main():
         except:
             hata(LANG['INVALID_CODE_MY'])
             exit(1)
-        app = requests.post("https://my.telegram.org/apps", cookies=cookie).text
-        soup = bs4.BeautifulSoup(app, features="html.parser")
-
-        if soup.title.string == "Create new application":
-            bilgi(LANG['NEW_APP'])
-            hashh = soup.find("input", {"name": "hash"}).get("value")
-            bilgi("🔄 Uygulama Oluşturuluyor..")
-            app_title = choice(["sir", "siri", "tg", "madelineproto", "telethon", "pyrogram"]) + choice(["user", "bt", "vue", "jsx", "python", "php"]) + choice(["", "_"]) + choice([str(randint(10000, 99999))])
-            app_shortname = choice(["sir", "siri", "tg", "madelineproto", "telethon", "pyrogram"]) + choice(["user", "bt", "vue", "jsx", "python", "php"]) + choice(["", "_"]) + choice([str(randint(10000, 99999))])
-            AppInfo = {
                 "hash": hashh,
                 "app_title": app_title,
                 "app_shortname": app_shortname,
